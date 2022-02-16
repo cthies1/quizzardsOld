@@ -7,7 +7,7 @@ class Navigation extends React.Component {
       <Navbar bg="dark" variant="dark">
         <Container>
           <Navbar.Brand href="/">Quizzards</Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/groups">Groups</Nav.Link>
             <Nav.Link href="/messages">Messages</Nav.Link>
