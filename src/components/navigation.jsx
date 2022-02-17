@@ -1,17 +1,46 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import {
+  HouseFill,
+  PeopleFill,
+  SendFill,
+  PersonCircle,
+} from "react-bootstrap-icons";
+import logo from "../images/logo.png";
 
 class Navigation extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" sticky="top" class="mx0">
         <Container>
-          <Navbar.Brand href="/">Quizzards</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img
+              alt=""
+              src={logo}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            Quizzards
+          </Navbar.Brand>
           <Nav>
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/groups">Groups</Nav.Link>
-            <Nav.Link href="/messages">Messages</Nav.Link>
-            <Nav.Link href="/profile">Profile</Nav.Link>
+            <Nav.Link href="/groupPage">GP</Nav.Link>
+            <Nav.Link href="/">
+              <HouseFill class="mx-1 mb-1" />
+              Home
+            </Nav.Link>
+            <Nav.Link href="/groups">
+              <PeopleFill class="mx-1 mb-1" />
+              Groups
+            </Nav.Link>
+            <Nav.Link href="/messages">
+              <SendFill class="mx-1 mb-1" />
+              Messages
+            </Nav.Link>
+            <Nav.Link href="/profile">
+              <PersonCircle class="mx-1 mb-1" />
+              Profile
+            </Nav.Link>
           </Nav>
         </Container>
       </Navbar>

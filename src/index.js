@@ -1,10 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { Navigation, Home, Groups, Messages, Profile } from "./components";
+import { Navigation } from "./components";
+import { Home, Groups, Messages, Profile, GroupPage } from "./pages";
 
 ReactDOM.render(
   <Router>
@@ -14,6 +16,7 @@ ReactDOM.render(
       <Route path="/groups" element={<Groups />} />
       <Route path="/messages" element={<Messages />} />
       <Route path="/profile" element={<Profile />} />
+      <Route path="/groupPage" element={<GroupPage />} />
     </Routes>
   </Router>,
 
