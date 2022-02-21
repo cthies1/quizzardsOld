@@ -7,60 +7,57 @@ function Groups() {
   return (
     <div className="groups">
       <div class="container">
-        {/* center items!!! */}
-        <div class="align-items-center">
-          <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-6 mt-5 mb-4">
-              <Button variant="outline-primary" size="lg">
-                Search Bar will go here
-              </Button>{" "}
-            </div>
-            <div class="col-lg-3 mt-5 mb-4">
-              <Button variant="outline-primary" size="lg">
-                Create New Group +
-              </Button>{" "}
-            </div>
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-6 mt-5 mb-4">
+            <Button variant="outline-primary" size="lg">
+              Search Bar will go here
+            </Button>{" "}
           </div>
-          <hr />
-          <div class="row align-items-center mt-5 mb-2">
-            <h1 class="font-weight-bold col-lg-4">Suggested Groups</h1>
+          <div class="col-lg-3 mt-5 mb-4">
+            <Button variant="outline-primary" size="lg">
+              Create New Group +
+            </Button>{" "}
           </div>
-          <div class="row pb-5">
-            <div class="col-lg-3">
-              <GroupBox link={photo13} groupName="Hogwarts" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo14} groupName="Puppies" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo15} groupName="Astronomy" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo16} groupName="Candy" />
-            </div>
+        </div>
+        <hr />
+        <div class="row align-items-center mt-5 mb-2">
+          <h1 class="font-weight-bold col-lg-4">Suggested Groups</h1>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-3">
+            <GroupBox link={photo13} groupName="Hogwarts" />
           </div>
-          <div class="row pb-5">
-            <div class="col-lg-3">
-              <GroupBox link={photo17} groupName="Books" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo13} groupName="Hogwarts" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo14} groupName="Puppies" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo15} groupName="Astronomy" />
-            </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo14} groupName="Puppies" />
           </div>
-          <div class="row pb-5">
-            <div class="col-lg-3">
-              <GroupBox link={photo16} groupName="Candy" />
-            </div>
-            <div class="col-lg-3">
-              <GroupBox link={photo17} groupName="Books" />
-            </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo15} groupName="Astronomy" />
+          </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo16} groupName="Candy" />
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-3">
+            <GroupBox link={photo17} groupName="Books" />
+          </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo13} groupName="Hogwarts" />
+          </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo14} groupName="Puppies" />
+          </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo15} groupName="Astronomy" />
+          </div>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-3">
+            <GroupBox link={photo16} groupName="Candy" />
+          </div>
+          <div class="col-lg-3">
+            <GroupBox link={photo17} groupName="Books" />
           </div>
         </div>
       </div>
